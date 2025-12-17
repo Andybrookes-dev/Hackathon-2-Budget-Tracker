@@ -8,6 +8,8 @@ Django==4.2.27
 django-allauth==65.13.1
 gunicorn==20.1.0
 idna==3.11
+psycopg==3.3.2
+psycopg-binary==3.3.2
 pycparser==2.23
 PyJWT==2.10.1
 requests==2.32.5
