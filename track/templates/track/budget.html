@@ -1,4 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Budget Page</h1>
+<div class="container p-2">
+{% if messages %}
+            <p class="messages text-white bg-success text-center p-2">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </p>
+    {% endif %}
+</div>
 {% endblock %}
