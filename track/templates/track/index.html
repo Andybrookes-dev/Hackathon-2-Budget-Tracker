@@ -1,4 +1,10 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <h1>Track List</h1>
-{% endblock %}
+<div class="container p-2">
+    {% if messages %}
+    <p class="messages text-white bg-success text-center p-2">
+        {% for message in messages %} {{ message }} {% endfor %}
+    </p>
+    {% endif %}
+    <div>{% endblock %}</div>
+</div>
