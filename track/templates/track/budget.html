@@ -1,4 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Budget Page</h1>
+   {% if messages %}
+            <p class="messages text-white bg-success text-center p-2">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </p>
+    {% endif %}
+    <h2>Create Budget and First Transaction</h2>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <h3>Budget</h3>
+    {{ budget_form.as_p }}
+
+    <h3>Initial Transaction</h3>
+    {{ transaction_form.as_p }}
+
+    <button type="submit">Save</button> <a href="{% url 'dashboard' %}" class="btn btn-sm btn-success p-2">Go to Dashboard</a> 
+</form>
+
+            
 {% endblock %}

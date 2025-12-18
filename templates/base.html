@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Budget Tracker</title>
-</head>
-<body>
-    {% block content %}
-    {% endblock %}
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Budget Tracker</title>
+         <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark mb-4">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1"
+                    >Hackathon - Budget Checker</span
+                >
+                <span><a class="nav-link text-white" href="{% url 'home' %}">Home</a></span>
+                <span
+                    ><a class="nav-link text-white" href="{% url 'register' %}"> Register</a></span
+                >
+                <span><a class="nav-link text-white" href="{% url 'login' %}"> Login</a></span>
+
+                <span><a class="nav-link text-white" href="{% url 'logout' %}">Logout</a></span>
+                
+                
+            </div>
+        </nav>
+        {% block content %} {% endblock %}
+         <!-- Optional: Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
