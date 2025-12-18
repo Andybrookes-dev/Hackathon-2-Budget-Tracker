@@ -1,0 +1,102 @@
+/* DM Serif Text - header font  */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+
+/* Zalando Sans Expanded - body font */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* Schoolbell - handwriting font  */
+@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
+
+/* global styling  */
+:root {
+    --header-font: "DM Serif Text", serif;
+    --body-font: "Zalando Sans Expanded", sans-serif;
+    --handwritting-font: "Schoolbell", cursive;
+    --black: #000000ff;
+    --white: #ffffffff;
+    --pink: #ff99c8ff;
+    --yellow: #fcf6bdff;
+    --green: #d0f4deff;
+    --blue: #a9def9ff;
+    --purple: #e4c1f9ff;
+}
+*/ .body {
+    background-color: white;
+}
+
+/* Nav bar styling */
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+}
+
+.nav-name {
+    font-family: "DM Serif Text", serif;
+    font-size: 120%;
+    text-align: left;
+    color: orange;
+    /* padding-right: 300px; */
+}
+
+.nav-button {
+    padding-left: 0%;
+}
+
+/* login page */
+.login-h2 {
+    font-family: "DM Serif Text", serif;
+}
+
+.login-container {
+    background-color: orange;
+    height: 100vh;
+    width: max(40%, 600px);
+    padding: 200px;
+}
+
+/* #nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20%;
+    color: #ac1b1a;
+    background-color: #ffffff;
+    padding-left: 30px;
+} */
+
+/* #nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20%;
+} */
+
+/* .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23feb234' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+} */
+
+/* .nav-button {
+    font-family: var(--body-font);
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+.nav-link:hover {
+    color: ;
+    box-shadow: 0 0 10px #ac1b1a;
+    transform: scale(1.02);
+}
+
+#nav-bar-active {
+    font-family: Verdana;
+    color: #ac1b1a;
+    box-shadow: none;
+}
+
+#nav-bar .logo {
+    width: 30px;
+} */

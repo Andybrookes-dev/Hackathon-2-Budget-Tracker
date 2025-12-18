@@ -1,31 +1,30 @@
-{% extends "base.html" %}
-{% block content %}
-    <div class="container">
-        <div class="container p-2">
-        <h2>Login</h2>
+{% extends "base.html" %} {% block content %}
+<div class="container" class="login-container">
+    <div class="container p-2">
+        <h2 class="login-h2">Login</h2>
         {% if messages %}
-            <p class="messages text-white bg-success text-center p-2">
-                {% for message in messages %}
-                    {{ message }}
-                {% endfor %}
-            </p>
+        <p class="messages text-white bg-success text-center p-2">
+            {% for message in messages %} {{ message }} {% endfor %}
+        </p>
         {% endif %}
-        </div>
-
-        <form method="post">
-            {% csrf_token %}
-            <div class="mb-3">
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username" required>
-            </div>
-            <br>
-            <div class="mb-3">
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password" required>
-            </div>
-            <br>
-            <button type="submit">Login</button>
-        </form>
-        <p>Don't have an account? <a href="{% url 'register' %}">Register here</a></p>
     </div>
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required />
+        </div>
+        <br />
+        <div class="mb-3">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required />
+        </div>
+        <br />
+        <button type="submit">Login</button>
+    </form>
+    <p>
+        Don't have an account? <a href="{% url 'register' %}">Register here</a>
+    </p>
+</div>
 {% endblock %}
